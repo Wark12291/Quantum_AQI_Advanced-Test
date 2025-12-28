@@ -11,6 +11,9 @@
 #MainMenu {visibility: hidden;}
 footer {visibility: hidden;}
 [data-testid="stSidebar"] {display: none;}
+[data-testid="stHeader"] {display: none;}
+[data-testid="stDecoration"] {display: none;}
+header {visibility: hidden;}
 
 /* Headings */
 h1, h2, h3 {
@@ -24,7 +27,7 @@ div.css-1r6slb0.e1tzin5v2 {
     border: 1px solid #00f3ff;
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 243, 255, 0.2);
+    box-shadow: 0 0 10px rgba(14, 122, 128, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
