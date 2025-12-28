@@ -2,7 +2,7 @@ import streamlit as st
 
 # Must be the first Streamlit command
 st.set_page_config(
-    page_title="Neon AQI Forecaster",
+    page_title="AQI Forecaster",
     page_icon="⚡",
     layout="wide",
     initial_sidebar_state="collapsed"
