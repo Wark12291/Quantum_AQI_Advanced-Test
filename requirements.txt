@@ -1,0 +1,15 @@
+streamlit
+streamlit-option-menu
+streamlit-folium
+folium
+pandas
+numpy
+requests
+reportlab
+matplotlib
+plotly
+statsmodels
+# tensorflow-cpu
+qiskit
+qiskit-aer
+scikit-learn
