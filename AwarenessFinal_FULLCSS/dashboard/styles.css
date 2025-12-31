@@ -1,0 +1,28 @@
+
+body {
+    background-color: #020d1f;
+    font-family: 'Roboto', sans-serif;
+    color: #e6f1ff;
+}
+.neon-title {
+    font-size: 38px;
+    font-weight: 700;
+    color: #00eaff;
+    text-shadow: 0 0 10px #00eaff, 0 0 20px #00bcd4;
+    margin-bottom: 20px;
+}
+.section-header {
+    font-size: 26px;
+    font-weight: 600;
+    color: #00bfff;
+    text-shadow: 0 0 8px #00bfff;
+    margin-top: 30px;
+}
+.neon-box {
+    background: rgba(0, 50, 80, 0.25);
+    border: 1px solid #00eaff;
+    padding: 18px 22px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px #0099cc;
+    margin-bottom: 18px;
+}
