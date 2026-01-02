@@ -63,7 +63,6 @@ def show_safety_measures():
 <li>Severe eye irritation or vision changes</li>
 </ul>
 </div>
-<br>
 <a href="?nav=awareness_hub" target="_self">
 <button class="awareness-back-btn">⬅ Back to Hub</button>
 </a>

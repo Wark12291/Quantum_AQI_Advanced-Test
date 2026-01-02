@@ -38,7 +38,6 @@ def show_diseases_caused():
 <p><strong>Diabetes:</strong> Air pollution is linked to increased risk of Type 2 diabetes due to inflammation and insulin resistance.</p>
 <p><strong>Pregnancy Complications:</strong> Increased risk of miscarriage, stillbith, and low birth weight.</p>
 </div>
-<br>
 <a href="?nav=awareness_hub" target="_self">
 <button class="awareness-back-btn">⬅ Back to Hub</button>
 </a>

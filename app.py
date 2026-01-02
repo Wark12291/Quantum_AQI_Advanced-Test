@@ -8,6 +8,8 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
+
+
 # Load Views - Main
 from views import home, realtime, forecasting, india_aqi, quantum, anomaly, heatmap
 

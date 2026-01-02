@@ -34,7 +34,6 @@ def show_quantum_insights():
 <h4>🚀 Future Applications</h4>
 <p><strong>Catalyst Design:</strong> Quantum computers could help design new materials (catalysts) that can break down pollutants into harmless substances more efficiently than current technology.</p>
 </div>
-<br>
 <a href="?nav=awareness_hub" target="_self">
 <button class="awareness-back-btn">⬅ Back to Hub</button>
 </a>

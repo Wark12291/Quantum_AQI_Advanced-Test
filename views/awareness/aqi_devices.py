@@ -31,7 +31,6 @@ def show_aqi_devices():
 <li><strong>NASA & ESA:</strong> Satellites like Sentinel-5P provide high-resolution data on gases like NO2 and Ozone.</li>
 </ul>
 </div>
-<br>
 <a href="?nav=awareness_hub" target="_self">
 <button class="awareness-back-btn">⬅ Back to Hub</button>
 </a>

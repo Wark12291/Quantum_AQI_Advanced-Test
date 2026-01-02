@@ -10,18 +10,8 @@ def show_india_aqi():
     
     st.markdown("""
     <a href="?nav=home" target="_self">
-        <button style="
-            background: linear-gradient(45deg, #00f3ff, #bd00ff);
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-weight: bold;
-            box-shadow: 0 0 10px rgba(189, 0, 255, 0.5);
-        ">⬅ Back to Home</button>
+        <button class="awareness-back-btn">⬅ Back to Home</button>
     </a>
-    <br><br>
     """, unsafe_allow_html=True)
         
     st.info("Fetching data for major Indian cities. Please wait...")

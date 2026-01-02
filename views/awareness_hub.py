@@ -16,7 +16,6 @@ def show_awareness_hub():
 <a href="?nav=home" target="_self">
 <button class="awareness-back-btn">⬅ Back to Home</button>
 </a>
-<br><br>
 """, unsafe_allow_html=True)
     
     # 8 Awareness Cards in 4x2 Grid

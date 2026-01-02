@@ -65,7 +65,6 @@ def show_understanding_aqi():
 <p>The AQI is calculated for each pollutant individually using a formula that converts the concentration of the pollutant into a number on the 0-500 scale. The highest of these individual AQI numbers becomes the overall AQI for that location on that day.</p>
 <p>The calculation involves specific "breakpoints" for each pollutant, which are established based on epidemiological studies of the health effects associated with different concentration levels.</p>
 </div>
-<br>
 <a href="?nav=awareness_hub" target="_self">
 <button class="awareness-back-btn">⬅ Back to Hub</button>
 </a>

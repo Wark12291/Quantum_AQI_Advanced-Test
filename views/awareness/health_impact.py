@@ -43,7 +43,6 @@ def show_health_impact():
 <li><strong>Outdoor Workers:</strong> Have higher total exposure due to time spent outside.</li>
 </ul>
 </div>
-<br>
 <a href="?nav=awareness_hub" target="_self">
 <button class="awareness-back-btn">⬅ Back to Hub</button>
 </a>

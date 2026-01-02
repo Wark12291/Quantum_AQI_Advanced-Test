@@ -413,26 +413,32 @@ div.css-1r6slb0.e1tzin5v2:hover {
     letter-spacing: 1px;
 }
 
-/* Back Button Styling for Awareness Pages */
+/* Back Button Styling - Subtle & Minimal */
 .awareness-back-btn {
-    background: linear-gradient(45deg, #00f3ff, #bd00ff);
-    color: white;
-    border: none;
-    padding: 12px 30px;
-    border-radius: 8px;
+    background: transparent;
+    color: #00f3ff;
+    border: 1px solid #00f3ff;
+    padding: 6px 12px;
+    border-radius: 4px;
     cursor: pointer;
-    font-weight: bold;
-    font-size: 1rem;
-    box-shadow: 0 0 15px rgba(189, 0, 255, 0.5);
-    transition: all 0.3s ease;
+    font-weight: normal;
+    font-size: 0.75rem;
+    transition: all 0.2s ease;
     text-decoration: none;
     display: inline-block;
-    margin: 20px 0;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 1000;
+    margin: 0;
+    opacity: 0.8;
 }
 
 .awareness-back-btn:hover {
-    box-shadow: 0 0 25px rgba(189, 0, 255, 0.8), 0 0 35px rgba(0, 243, 255, 0.6);
-    transform: scale(1.05);
+    color: rgb(255, 179, 0);
+    border-color: rgb(255, 179, 0);
+    opacity: 1;
+    background: rgba(255, 255, 255, 0.05);
 }
 
 /* Responsive Typography */
@@ -453,3 +459,73 @@ div.css-1r6slb0.e1tzin5v2:hover {
         font-size: 1rem;
     }
 }
+
+
+/* =========================================================
+   Streamlit Selectbox (City Dropdown)
+   Remove full outline, keep border ONLY on arrow button
+   ========================================================= */
+
+div[data-baseweb="select"] > div {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding-right: 44px;
+}
+
+div[data-baseweb="select"] span {
+    color: #ffffff !important;
+    font-size: 0.9rem;
+}
+
+div[data-baseweb="select"] input {
+    background: transparent !important;
+}
+
+div[data-baseweb="select"] > div > div:last-child {
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 6px;
+    padding: 6px 8px;
+    margin-right: 6px;
+    background: transparent;
+}
+
+div[data-baseweb="select"] svg {
+    color: #ffffff !important;
+    width: 14px;
+    height: 14px;
+}
+
+div[data-baseweb="select"] > div > div:last-child:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+
+/* ===============================
+   City Dropdown Text Colors
+   =============================== */
+
+/* "Select City" label */
+label {
+    color: #8fdcff !important;
+    font-size: 0.85rem;
+}
+
+/* ===============================
+   City Dropdown – Selected Value Color FIX
+   =============================== */
+
+/* Selected city text (Delhi, Kolkata, etc.) */
+div[data-baseweb="select"] div[role="button"],
+div[data-baseweb="select"] div[aria-selected="true"],
+div[data-baseweb="select"] > div > div > div {
+    color: #ffffff !important;
+    font-weight: 500;
+}
+
+/* Fallback for all text inside the select value area */
+div[data-baseweb="select"] span,
+div[data-baseweb="select"] p {
+    color: #ffffff !important;
+}
+

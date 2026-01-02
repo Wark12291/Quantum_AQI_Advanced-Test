@@ -42,7 +42,6 @@ def show_precautions():
 <li><strong>Jaggery (Gur):</strong> Traditional wisdom suggests jaggery may help clear the respiratory tract.</li>
 </ul>
 </div>
-<br>
 <a href="?nav=awareness_hub" target="_self">
 <button class="awareness-back-btn">⬅ Back to Hub</button>
 </a>

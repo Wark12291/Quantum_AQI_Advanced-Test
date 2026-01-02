@@ -33,7 +33,6 @@ def show_pollution_control():
 <h4>Bio-Filters</h4>
 <p>Using algae and moss walls in urban furniture to absorb CO2 and particulate matter.</p>
 </div>
-<br>
 <a href="?nav=awareness_hub" target="_self">
 <button class="awareness-back-btn">⬅ Back to Hub</button>
 </a>
