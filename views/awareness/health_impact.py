@@ -1,11 +1,11 @@
 import streamlit as st
 
 def show_health_impact():
-    st.markdown("<h1 class='neon-title'>❤️ Health Impact of Air Pollution</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 class='neon-title'>Health Impact of Air Pollution</h1>", unsafe_allow_html=True)
     
     st.markdown("""
 <div class="neon-box">
-<h4>🫁 Respiratory System Effects</h4>
+<h4>Respiratory System Effects</h4>
 <p>Air pollution primarily attacks the respiratory system, causing both acute and chronic issues. Inhaling pollutants can irritate the airways, leading to coughing, wheezing, and shortness of breath.</p>
 <ul>
 <li><strong>Asthma Aggravation:</strong> Pollutants like ozone and PM2.5 can trigger asthma attacks and increase the frequency of symptoms.</li>
@@ -14,7 +14,7 @@ def show_health_impact():
 <li><strong>Reduced Lung Function:</strong> Studies show permanent reduction in lung capacity in children growing up in polluted areas.</li>
 </ul>
 </div>
-<h3 class="section-header">💓 Cardiovascular Impact</h3>
+<h3 class="section-header">Cardiovascular Impact</h3>
 <div class="neon-box">
 <p>Fine particulate matter (PM2.5) can enter the bloodstream, traveling to the heart and causing systemic inflammation.</p>
 <ul>
@@ -24,7 +24,7 @@ def show_health_impact():
 <li><strong>Arrhythmias:</strong> Irregular heartbeats can be triggered by pollutant exposure.</li>
 </ul>
 </div>
-<h3 class="section-header">🧠 Neurological & Other Effects</h3>
+<h3 class="section-header">Neurological & Other Effects</h3>
 <div class="neon-box">
 <p>Recent research suggests air pollution affects more than just lungs and heart:</p>
 <ul>
@@ -35,7 +35,7 @@ def show_health_impact():
 </ul>
 </div>
 <div class="neon-box">
-<h4>🛡️ Who is Most at Risk?</h4>
+<h4>Who is Most at Risk?</h4>
 <ul>
 <li><strong>Children:</strong> Their lungs are still developing, and they breathe more air per pound of body weight.</li>
 <li><strong>The Elderly:</strong> Often have weaker immune systems and pre-existing conditions.</li>

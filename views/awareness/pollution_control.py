@@ -1,11 +1,11 @@
 import streamlit as st
 
 def show_pollution_control():
-    st.markdown("<h1 class='neon-title'>🌱 Pollution Control Actions</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 class='neon-title'>Pollution Control Actions</h1>", unsafe_allow_html=True)
     
     st.markdown("""
 <div class="neon-box">
-<h4>👤 Individual Actions</h4>
+<h4>Individual Actions</h4>
 <p>Every small step counts when millions participate.</p>
 <ul>
 <li><strong>Reduce Vehicle Use:</strong> Carpool, use public transport, cycle, or walk whenever possible.</li>
@@ -15,7 +15,7 @@ def show_pollution_control():
 <li><strong>Solar Power:</strong> Switch to solar energy for home if feasible.</li>
 </ul>
 </div>
-<h3 class="section-header">🏘️ Community & Government Actions</h3>
+<h3 class="section-header">Community & Government Actions</h3>
 <div class="neon-box">
 <ul>
 <li><strong>Green Transport:</strong> Investment in electric buses and expanding metro networks.</li>
@@ -24,7 +24,7 @@ def show_pollution_control():
 <li><strong>Crop Residue Management:</strong> Subsidizing machinery for farmers to manage stubble instead of burning it.</li>
 </ul>
 </div>
-<h3 class="section-header">🚀 Future Technologies</h3>
+<h3 class="section-header">Future Technologies</h3>
 <div class="neon-box">
 <h4>Smog Towers & Air Cleaning</h4>
 <p>Large-scale air purifiers installed in cities to filter air in a localized 1km radius.</p>

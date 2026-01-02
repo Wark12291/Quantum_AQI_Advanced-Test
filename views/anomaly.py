@@ -4,7 +4,7 @@ import utils.anomaly as anomaly
 import plotly.express as px
 
 def show_anomaly():
-    st.markdown("## ⚠️ Anomaly Detection")
+    st.markdown("## Anomaly Detection")
     
     st.markdown("""
     <a href="?nav=home" target="_self">

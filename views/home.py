@@ -62,7 +62,7 @@ text-transform: uppercase;
         st.markdown("""
 <a href="?nav=realtime" target="_self" style="text-decoration: none;">
 <div class="neon-card">
-<h3>🌍 Real-Time AQI</h3>
+<h3>Real-Time AQI</h3>
 <p>Live pollution data monitoring for any city.</p>
 </div>
 </a>
@@ -72,7 +72,7 @@ text-transform: uppercase;
         st.markdown("""
 <a href="?nav=forecasting" target="_self" style="text-decoration: none;">
 <div class="neon-card">
-<h3>📈 AQI Forecasting</h3>
+<h3>AQI Forecasting</h3>
 <p>Predict future AQI with ARIMA & LSTM models.</p>
 </div>
 </a>
@@ -96,7 +96,7 @@ text-transform: uppercase;
         st.markdown("""
 <a href="?nav=quantum" target="_self" style="text-decoration: none;">
 <div class="neon-card">
-<h3>⚛️ Quantum Module</h3>
+<h3>Quantum Module</h3>
 <p>Quantum noise simulation using Qiskit.</p>
 </div>
 </a>
@@ -106,7 +106,7 @@ text-transform: uppercase;
         st.markdown("""
 <a href="?nav=anomaly" target="_self" style="text-decoration: none;">
 <div class="neon-card">
-<h3>⚠️ Anomaly Detection</h3>
+<h3>Anomaly Detection</h3>
 <p>Spot sudden spikes in pollution levels.</p>
 </div>
 </a>
@@ -116,7 +116,7 @@ text-transform: uppercase;
         st.markdown("""
 <a href="?nav=heatmap" target="_self" style="text-decoration: none;">
 <div class="neon-card">
-<h3>🗺️ Heatmap</h3>
+<h3>Heatmap</h3>
 <p>Interactive geospatial pollution map.</p>
 </div>
 </a>
@@ -131,7 +131,7 @@ text-transform: uppercase;
         st.markdown("""
 <a href="?nav=awareness_hub" target="_self" style="text-decoration: none;">
 <div class="neon-card">
-<h3>📚 AQI Awareness & Safety Hub</h3>
+<h3>AQI Awareness & Safety Hub</h3>
 <p>A complete environmental knowledge center with scientific insights. Click to explore.</p>
 </div>
 </a>

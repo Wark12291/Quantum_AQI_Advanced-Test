@@ -5,7 +5,7 @@ import utils.api as api
 from folium.plugins import HeatMap
 
 def show_heatmap():
-    st.markdown("## 🗺️ AQI Geospatial Heatmap")
+    st.markdown("## AQI Geospatial Heatmap")
     
     st.markdown("""
     <a href="?nav=home" target="_self">

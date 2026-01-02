@@ -1,15 +1,15 @@
 import streamlit as st
 
 def show_understanding_aqi():
-    st.markdown("<h1 class='neon-title'>📊 Understanding AQI</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 class='neon-title'>Understanding AQI</h1>", unsafe_allow_html=True)
     
     st.markdown("""
 <div class="neon-box">
-<h4>🤔 What is Air Quality Index (AQI)?</h4>
+<h4>What is Air Quality Index (AQI)?</h4>
 <p>The Air Quality Index (AQI) is a standard metric used by government agencies to communicate to the public how polluted the air currently is or how polluted it is forecast to become. As the AQI increases, an increasingly large percentage of the population is likely to experience increasingly severe adverse health effects.</p>
 <p>Think of the AQI as a yardstick that runs from 0 to 500. The higher the AQI value, the greater the level of air pollution and the greater the health concern. For example, an AQI value of 50 represents good air quality with little potential to affect public health, while an AQI value over 300 represents hazardous air quality.</p>
 </div>
-<h3 class="section-header">📉 AQI Categories & Health Implications</h3>
+<h3 class="section-header">AQI Categories & Health Implications</h3>
 <div class="neon-box">
 <table class="glowing-table" style="width:100%">
 <tr>
@@ -49,7 +49,7 @@ def show_understanding_aqi():
 </tr>
 </table>
 </div>
-<h3 class="section-header">🧪 Key Pollutants Measured</h3>
+<h3 class="section-header">Key Pollutants Measured</h3>
 <div class="neon-box">
 <ul>
 <li><strong>PM2.5 (Particulate Matter < 2.5 microns):</strong> Fine particles that can penetrate deep into the lungs and enter the bloodstream. Sources: Vehicle exhaust, industrial emissions, wildfires.</li>
@@ -61,7 +61,7 @@ def show_understanding_aqi():
 </ul>
 </div>
 <div class="neon-box">
-<h4>🧮 How is AQI Calculated?</h4>
+<h4>How is AQI Calculated?</h4>
 <p>The AQI is calculated for each pollutant individually using a formula that converts the concentration of the pollutant into a number on the 0-500 scale. The highest of these individual AQI numbers becomes the overall AQI for that location on that day.</p>
 <p>The calculation involves specific "breakpoints" for each pollutant, which are established based on epidemiological studies of the health effects associated with different concentration levels.</p>
 </div>

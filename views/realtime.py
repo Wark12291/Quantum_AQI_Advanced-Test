@@ -4,7 +4,7 @@ import config
 import utils.pdf_gen as pdf_gen
 
 def show_realtime():
-    st.markdown("## 🌍 Real-Time AQI Monitor")
+    st.markdown("## Real-Time AQI Monitor")
     
     st.markdown("""
     <a href="?nav=home" target="_self">

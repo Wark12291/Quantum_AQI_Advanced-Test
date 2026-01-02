@@ -42,7 +42,7 @@ def show_india_aqi():
             cleanest = dfSorted.iloc[0]
             st.success(f"Cleanest: **{cleanest['City']}** (AQI: {cleanest['AQI']})")
             
-        st.markdown("### 📊 City AQI Comparison")
+        st.markdown("###City AQI Comparison")
         fig = px.bar(
             dfSorted, x='City', y='AQI', 
             color='AQI', 
@@ -57,7 +57,7 @@ def show_india_aqi():
         col_title, col_download = st.columns([0.85, 0.15])
         
         with col_title:
-            st.markdown("### 📋 Detailed Data")
+            st.markdown("### Detailed Data")
         
         with col_download:
             # Generate the PDF buffer

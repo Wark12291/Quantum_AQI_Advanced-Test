@@ -1,11 +1,11 @@
 import streamlit as st
 
 def show_safety_measures():
-    st.markdown("<h1 class='neon-title'>🚨 Emergency Safety Measures</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 class='neon-title'>Emergency Safety Measures</h1>", unsafe_allow_html=True)
     
     st.markdown("""
 <div class="neon-box">
-<h4>⚡ Immediate Actions during High AQI (300+)</h4>
+<h4>Immediate Actions during High AQI (300+)</h4>
 <ol>
 <li><strong>Stay Indoors:</strong> Seal windows and doors. Use the air conditioner in recirculation mode.</li>
 <li><strong>Air Purification:</strong> Run air purifiers at max speed in the room you occupy most.</li>
@@ -14,7 +14,7 @@ def show_safety_measures():
 <li><strong>Hydrate:</strong> Drink water to keep airways moist and help mucus clear particles.</li>
 </ol>
 </div>
-<h3 class="section-header">📝 Daily Safety Routine</h3>
+<h3 class="section-header">Daily Safety Routine</h3>
 <div class="neon-box">
 <ul>
 <li><strong>Monitor AQI:</strong> Check this app daily before leaving home.</li>
@@ -23,7 +23,7 @@ def show_safety_measures():
 <li><strong>Wash Up:</strong> Wash your face and rinse your eyes after coming from outside to remove settled particles.</li>
 </ul>
 </div>
-<h3 class="section-header">😷 Protective Gear Guide</h3>
+<h3 class="section-header">Protective Gear Guide</h3>
 <div class="neon-box">
 <table class="glowing-table">
 <tr>
@@ -54,7 +54,7 @@ def show_safety_measures():
 </table>
 </div>
 <div class="neon-box">
-<h4>🏥 When to seek Medical Help?</h4>
+<h4>When to seek Medical Help?</h4>
 <p>Consult a doctor immediately if you experience:</p>
 <ul>
 <li>Persistent coughing or wheezing</li>

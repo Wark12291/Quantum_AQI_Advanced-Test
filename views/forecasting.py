@@ -6,7 +6,7 @@ import utils.api as api
 import utils.forecasting as forecasting
 
 def show_forecasting():
-    st.markdown("## 📈 Future AQI Forecasting")
+    st.markdown("## Future AQI Forecasting")
     
     st.markdown("""
     <a href="?nav=home" target="_self">
@@ -26,7 +26,7 @@ def show_forecasting():
         hybrid = forecasting.get_hybrid_forecast(arima_pred, lstm_pred)
         
     # Plotting
-    st.markdown("### 🔮 7-Day Forecast")
+    st.markdown("### 7-Day Forecast")
     
     fig = go.Figure()
     fig.add_trace(go.Scatter(x=hist_data.index, y=hist_data['AQI'], mode='lines', name='Historical', line=dict(color='#00f3ff')))

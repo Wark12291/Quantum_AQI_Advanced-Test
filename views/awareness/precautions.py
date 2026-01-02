@@ -1,11 +1,11 @@
 import streamlit as st
 
 def show_precautions():
-    st.markdown("<h1 class='neon-title'>🛡️ Precautions & Prevention</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 class='neon-title'>Precautions & Prevention</h1>", unsafe_allow_html=True)
     
     st.markdown("""
 <div class="neon-box">
-<h4>🏠 Indoor Measures</h4>
+<h4>Indoor Measures</h4>
 <p>Since we spend most of our time indoors, maintaining good indoor air quality is crucial.</p>
 <ul>
 <li><strong>Air Purifiers:</strong> Use HEPA (High Efficiency Particulate Air) filters to remove fine particles. Ensure the unit is rated for the room size.</li>
@@ -15,7 +15,7 @@ def show_precautions():
 <li><strong>Regular Cleaning:</strong> Wet mop floors and use a vacuum with a HEPA filter to reduce dust.</li>
 </ul>
 </div>
-<h3 class="section-header">🌳 Outdoor Precautions</h3>
+<h3 class="section-header">Outdoor Precautions</h3>
 <div class="neon-box">
 <ul>
 <li><strong>Check AQI Daily:</strong> Make it a habit to check the AQI forecast before planning outdoor activities.</li>
@@ -24,7 +24,7 @@ def show_precautions():
 <li><strong>Time Your Outings:</strong> Pollution is often highest in the morning and evening rush hours. Mid-day might be clearer in some seasons.</li>
 </ul>
 </div>
-<h3 class="section-header">🚗 Travel Safety</h3>
+<h3 class="section-header">Travel Safety</h3>
 <div class="neon-box">
 <ul>
 <li><strong>Recirculate Air:</strong> When driving in heavy traffic, set your car's ventilation to 'recirculate' mode to avoid drawing in exhaust fumes.</li>
@@ -33,7 +33,7 @@ def show_precautions():
 </ul>
 </div>
 <div class="neon-box">
-<h4>🥗 Natural Remedies & Diet</h4>
+<h4>Natural Remedies & Diet</h4>
 <p>A healthy diet can boost your body's resilience against pollution.</p>
 <ul>
 <li><strong>Antioxidants:</strong> Vitamin C (citrus fruits) and Vitamin E (nuts, seeds) help combat oxidative stress caused by pollution.</li>

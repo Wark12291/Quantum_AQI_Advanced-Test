@@ -77,7 +77,7 @@ def show_quantum():
 
     col1.markdown(f"""
         <div class='neon-card'>
-            <h3>🔮 High Pollution Probability</h3>
+            <h3>High Pollution Probability</h3>
             <h2 style='color:#00eaff; text-shadow: 0 0 10px #00eaff;'>{round(high_prob*100,2)}%</h2>
         </div>
     """, unsafe_allow_html=True)
@@ -109,7 +109,7 @@ def show_quantum():
     c_chart, c_table = st.columns([0.6, 0.4])
 
     with c_chart:
-        st.markdown("<h3 style='color:#00f3ff; text-shadow: 0 0 10px #00f3ff;'>📊 Quantum State Probability</h3>", unsafe_allow_html=True)
+        st.markdown("<h3 style='color:#00f3ff; text-shadow: 0 0 10px #00f3ff;'>Quantum State Probability</h3>", unsafe_allow_html=True)
         
         fig, ax = plt.subplots(figsize=(2.8, 1.8))
         categories = ["Low (|0⟩)", "High (|1⟩)"]
@@ -147,7 +147,7 @@ def show_quantum():
         st.pyplot(fig)
 
     with c_table:
-        st.markdown("<h3 style='color:#00f3ff; text-shadow: 0 0 10px #00f3ff;'>🔍 State Breakdown</h3>", unsafe_allow_html=True)
+        st.markdown("<h3 style='color:#00f3ff; text-shadow: 0 0 10px #00f3ff;'>State Breakdown</h3>", unsafe_allow_html=True)
         
         st.markdown(f"""
             <div style='margin-top:20px;'>

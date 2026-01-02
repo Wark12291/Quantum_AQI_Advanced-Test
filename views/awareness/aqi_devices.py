@@ -1,11 +1,11 @@
 import streamlit as st
 
 def show_aqi_devices():
-    st.markdown("<h1 class='neon-title'>📡 AQI Devices & IoT Monitoring</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 class='neon-title'>AQI Devices & IoT Monitoring</h1>", unsafe_allow_html=True)
     
     st.markdown("""
 <div class="neon-box">
-<h4>🏠 Consumer AQI Monitors</h4>
+<h4>Consumer AQI Monitors</h4>
 <p>Affordable devices for home use to track indoor air quality.</p>
 <ul>
 <li><strong>Laser Scattering Sensors:</strong> Most common sensor type (e.g., Plantower sensors) for detecting PM2.5.</li>
@@ -13,7 +13,7 @@ def show_aqi_devices():
 <li><strong>Why you need one:</strong> You can't improve what you don't measure. Knowing when indoor air is bad prompts you to turn on filters.</li>
 </ul>
 </div>
-<h3 class="section-header">🌐 IoT Sensor Networks</h3>
+<h3 class="section-header">IoT Sensor Networks</h3>
 <div class="neon-box">
 <p>The future of monitoring is hyper-local data through Internet of Things (IoT).</p>
 <ul>
@@ -22,7 +22,7 @@ def show_aqi_devices():
 <li><strong>Smart City Integration:</strong> Traffic lights that adjust timing based on local pollution levels to reduce idling.</li>
 </ul>
 </div>
-<h3 class="section-header">🛰️ Satellite Monitoring</h3>
+<h3 class="section-header">Satellite Monitoring</h3>
 <div class="neon-box">
 <p>Satellites provide a bird's-eye view of pollution movement across continents.</p>
 <ul>
