@@ -2,6 +2,7 @@ import streamlit as st
 import utils.api as api
 import config
 import utils.pdf_gen as pdf_gen
+import textwrap
 
 def show_realtime():
     st.markdown("## Real-Time AQI Monitor")
@@ -15,16 +16,9 @@ def show_realtime():
     # Cities provided in user's specific order
     city_options = [c.title() for c in config.AQI_CITIES]
         
-    # Auto-Analyze on selection by using session state or simply running logic if city is present
-    # User requested "select one of it" - slide down options. 
-    # We will show data immediately after selection.
-    
+    # Auto-Analyze on selection
     CITY_DISPLAY = st.selectbox("Select City", city_options, index=0)
     CITY = CITY_DISPLAY.lower()
-
-    # REUSE EXISTING UTILS BUT ADAPT TO NEW UI
-    # User provided direct requests logic, but best practice is to use our api.fetch_aqi
-    # api.fetch_aqi returns data['data'] already.
     
     try:
         # Use existing API wrapper for better error handling/caching
@@ -44,13 +38,78 @@ def show_realtime():
         dominent = aqi_data.get("dominentpol", "N/A")
         iaqi = aqi_data.get("iaqi", {})
 
-        # MAIN AQI CARD
-        st.markdown(f"""
+        # -----------------------------------------------------------
+        # LOGIC: Determine Category and Color based on AQI value
+        # -----------------------------------------------------------
+        aqi_category = "Unknown"
+        status_color = "#e0e0e0" # Default grey
+
+        if isinstance(aqi, (int, float)):
+            if aqi <= 50:
+                aqi_category = "Good"
+                status_color = "#00e400"  # Green
+            elif aqi <= 100:
+                aqi_category = "Moderate"
+                status_color = "#ffff00"  # Yellow
+            elif aqi <= 150:
+                aqi_category = "Unhealthy for Sensitive Groups"
+                status_color = "#ff7e00"  # Orange
+            elif aqi <= 200:
+                aqi_category = "Unhealthy"
+                status_color = "#ff0000"  # Red
+            elif aqi <= 300:
+                aqi_category = "Very Unhealthy"
+                status_color = "#8f3f97"  # Purple
+            else:
+                aqi_category = "Hazardous"
+                status_color = "#7e0023"  # Maroon
+        # -----------------------------------------------------------
+
+        # ---------------------------------------------------------
+        # MAIN AQI CARD (WITH SCROLLING TICKER)
+        # ---------------------------------------------------------
+        
+        # Updated CSS: Added mask-image for blur/fade effect at edges
+        card_html = textwrap.dedent(f"""
+            <style>
+                .scrolling-wrapper {{
+                    width: 35%;
+                    margin: 15px auto;
+                    overflow: hidden;
+                    padding: 10px 0;
+                    /* BLUR/FADE EFFECT AT EDGES */
+                    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+                    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+                }}
+                .scrolling-text {{
+                    display: inline-block;
+                    animation: scroll-text 10s linear infinite;
+                    color: #00f3ff;
+                    font-family: 'Courier New', monospace;
+                    font-weight: bold;
+                    font-size: 20px;
+                    text-shadow: 0 0 8px #00f3ff;
+                    white-space: nowrap;
+                    text-transform: uppercase;
+                }}
+                @keyframes scroll-text {{
+                    0% {{ transform: translateX(90%); }}
+                    100% {{ transform: translateX(-100%); }}
+                }}
+            </style>
+
             <div class='neon-card'>
                 <h2>🌬 Current AQI: <span style='color:#00eaff'>{aqi}</span></h2>
+                <div class='scrolling-wrapper'>
+                    <div class='scrolling-text'>
+                        ⚠️ AIR STATUS ALERT: {aqi_category}
+                    </div>
+                </div>
                 <p>Dominant Pollutant: <b>{str(dominent).upper()}</b></p>
             </div>
-        """, unsafe_allow_html=True)
+        """)
+        
+        st.markdown(card_html, unsafe_allow_html=True)
 
         st.write("")
         st.markdown("###  Detailed Pollutant Cards")
@@ -89,7 +148,6 @@ def show_realtime():
             try:
                 num = float(v)
                 rounded = round(num, 2)
-                # If it's a whole number, show it as int
                 if rounded == int(rounded):
                     rounded = int(rounded)
                 return f"{rounded}{UNIT_MAP.get(code, '')}"
@@ -190,7 +248,6 @@ def show_realtime():
         pdf_data = buffer.getvalue()
 
         # PREMIUM NEON DOWNLOAD BUTTON
-        # Fix: Targeting the inner button element more aggressively and handling hover states
         st.markdown("""
             <style>
                 /* Target the specific Streamlit download button container */
