@@ -42,7 +42,7 @@ def show_india_aqi():
             cleanest = dfSorted.iloc[0]
             st.success(f"Cleanest: **{cleanest['City']}** (AQI: {cleanest['AQI']})")
             
-        st.markdown("###City AQI Comparison")
+        st.markdown("### City AQI Comparison")
         fig = px.bar(
             dfSorted, x='City', y='AQI', 
             color='AQI', 
